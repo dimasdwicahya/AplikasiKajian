@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mobivision.aplikasikajian">
+
 
     <application
         android:allowBackup="true"
@@ -9,13 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Aplikasi Kajian" />
+
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Sign In">
+
+
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name=".AddPostActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".DetailPostActivity"
+            android:parentActivityName=".MainActivity" />
+
+
     </application>
 
 </manifest>
